@@ -54,7 +54,7 @@ def gerar_canhotos():
         if cont > 5:
             canhoto_wb.save('planilha.xlsx')
             time.sleep(2)
-            win32api.ShellExecute(0, "print", 'CANHOTO NF-e.xlsx', None, 'caminho', 0)
+            win32api.ShellExecute(0, "print", 'planilha.xlsx', None, 'caminho', 0)
             time.sleep(1)
             cont = 0
 
